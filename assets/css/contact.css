@@ -1,0 +1,42 @@
+.call-to-action {
+    text-align: center;
+    padding: 20px;
+    /* background: #eee; */
+  }
+  
+  .call-to-action h2 {
+    margin: 0;
+    font-size: 2.5em;
+    position: relative;
+    animation: leftRight 1s forwards 0.2s;
+  }
+  
+  .call-to-action p {
+    font-size: 1.6em;
+    color: #555;
+    position: relative;
+    animation: leftRight 1s forwards 0.2s;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.6em;
+    animation: flip 2s forwards;
+  }
+  
+  .cta-button:hover {
+    background: #555;
+    opacity: 85%;
+  }
+
+  @media (max-width: 480px) {
+    .story {
+        padding: 86px 11px;
+    }
+  }
+  

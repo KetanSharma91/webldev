@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body,
+html {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.sec {
+    background-image: url('../images/bgs/servicesbg.jpg');
+    background-attachment: fixed;
+    filter: brightness(0.9);
+    padding: 40px 70px;
+    color: white;
+}
+
+.sec-title {
+    text-align: left;
+    text-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+    width: 80%;
+    padding: 50px 0px;
+    position: relative;
+    animation: leftRight 1s forwards 0.2s;
+}
+
+.sec-title h1 {
+    font-size: 100px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.sec-title p {
+    font-size: 43px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 50px;
+    text-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+.services-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #4F4949;
+    border-radius: 24px;
+    box-shadow: 0 13px 10px rgba(167, 27, 27, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3 {
+    font-size: 42px;
+    font-weight: 100;
+    margin: 30px;
+    padding: 0;
+}
+
+.service-card p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+/* -------------------------------------------pricing----------------------------- */
+
+
+.pricing {
+    background-image: url('../images/bgs/pricebg.jpg');
+    background-attachment: fixed;
+    height: 130vh;
+    filter: brightness(0.9);
+    padding: 40px 44px 40px 70px;
+    color: white;
+}
+
+.pricing h2 {
+    font-size: 75px;
+    font-weight: 400;
+    margin: 53px 0px 40px 772px;
+}
+
+.pricing form {
+    font-size: 52px;
+    font-weight: 200;
+    text-align: left;
+    margin: 0px 0px 0px 772px;
+}
+
+.checkbox-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.checkbox-group label {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.pricing input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#websiteOptions {
+    padding: 10px 0px;
+    padding-left: 75px;
+}
+
+#logoOptions,
+#dataManagementOptions {
+    text-align: left;
+    padding: 10px 0px;
+    padding-bottom: 15px;
+    padding-left: 75px;
+}
+
+#logoOptions p,
+#dataManagementOptions p {
+    font-size: 40px;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.total-price {
+    padding: 0;
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0px 0px 0px 818px;
+}
+
+@media (max-width: 480px) {
+    .sec {
+        padding: 0px 20px;
+        width: 90%;
+        padding-top: 130px;
+    }
+
+    .sec-title h1 {
+        font-size: 3.5em;
+    }
+
+    .sec-title p {
+        font-size: 2em;
+    }
+
+    .services {
+        width: 100%;
+    }
+
+    .services h2 {
+        font-size: 3em;
+    }
+
+    .services-box {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .service-card {
+        width: 89%;
+        margin: 15px 0px;
+    }
+
+    .service-card h3 {
+        font-size: 2.6em;
+    }
+
+    .service-card p {
+        font-size: 1.7em;
+    }
+
+    .pricing {
+        padding: 19px 0;
+        font-size: 1.7em;
+        height: 144vh;
+    }
+
+    .pricing h2 {
+        margin: 58px 6px 40px 70px;
+    }
+
+    .pricing input[type="checkbox"] {
+        margin: 0;
+    }
+
+    .pricing form {
+        width: 91%;
+        font-size: 2.1em;
+        padding: 0px;
+        margin: 0px 0px 0px 24px;
+    }
+
+    #websiteOptions {
+        font-size: 0.7em;
+        padding: 10px;
+    }
+
+    .checkbox-group label {
+        margin-left: 0px; 
+        font-size: 0.7em;
+    }
+
+    #logoOptions,
+    #dataManagementOptions {
+        padding: 10px;
+        padding-left: 25px;
+
+    }
+
+    #logoOptions p, #dataManagementOptions p {
+        font-size: 0.5em;
+    }
+
+    .total-price {
+        margin: 0px 0px 0px 21px;
+    }
+}
