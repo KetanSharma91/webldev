@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web|Dev | Scale Your Business</title>
+        <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/language.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/about.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar" id="navbar">
+                <h1 href="#"><a href="#">Web|Dev</a></h1>
+                <ul>
+                    <li><a href="index.html" data-hover="Portfolio">Our Work</a></li>
+                    <li><a href="#" data-hover="We-Who?">About Us</a></li>
+                    <li><a href="services.html" data-hover="What We Do?">Services</a></li>
+                    <li><a href="contactus.html" data-hover="Say Hi!">Contact Us</a></li>
+                </ul>
+                <div class="lan1">
+                    <div class="select-container">
+                        <div class="svg-container" onclick="toggleDropdown()">
+                            <div class="options" id="options">
+                                <div data-value="en" onclick="selectOption('en', event)">English</div>
+                                <div data-value="hi" onclick="selectOption('hi', event)">हिन्दी</div>
+                                <div data-value="kn" onclick="selectOption('kn', event)">ಕನ್ನಡ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu"><img src="assets/images/menu.png"
+                    alt="menu"></div>
+            </div>
+        </header>
+        <section class="about section1">
+            <div class="about-content">
+                <h2>Get To Know Us</h2>
+                <p>Empowering your online presence through innovative web
+                    solutions. </p>
+            </div>
+            <div class="content">
+                <div class="about-img"><img src="assets/images/team.jpg"
+                        alt="team"></div>
+                <div class="about-parg">
+                    <h2 class="whowe">Who We Are</h2>
+                    <p class="whowep">At Web|Dev Solutions, we are passionate
+                        about crafting
+                        custom web solutions that drive your business
+                        forward.
+                        With a team of experienced developers and designers,
+                        we
+                        specialize in creating responsive, user-friendly
+                        websites that not only look great but also perform
+                        exceptionally.</p>
+
+                    <h2 class="mis">Our Mission</h2>
+                    <p class="misp">Our mission is to help businesses achieve
+                        their digital
+                        goals by providing top-notch web development
+                        services.
+                        We focus on delivering solutions that are both
+                        effective
+                        and affordable, ensuring that your online presence
+                        stands out in the competitive digital landscape.</p>
+
+                    <h2 class="value">Our Values</h2>
+                    <ul>
+                        <li class="inno">Innovation: We stay ahead of the curve
+                            by embracing
+                            new technologies and trends.</li>
+                        <li class="qual">Quality: We deliver high-quality work
+                            that meets and
+                            exceeds industry standards.</li>
+                        <li class="cust">Customer Satisfaction: We are committed
+                            to providing
+                            exceptional service and support.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="call-to-action">
+            <h2>Ready to Elevate Your Online Presence?</h2>
+            <p>Contact us today to get started on your web
+                development project
+                and discover how we can help you achieve your digital goals.</p>
+            <a href="contactus.html" class="cta-button">Get in Touch</a>
+        </div>
+        <section class="foot section2" id="contact">
+            <footer>
+                <div class="footer-start">
+                    <div class="company-name">
+                        <span class="loc-name">WeblDev Solutions , <br>
+                            Banagalore
+                            North , <br>
+                            Bangaluru , KA <br> India - 560057</span>
+                        <h4 class="loc"> Location</h4>
+                    </div>
+                    <div class="headings">
+                        <div class="languages">
+                            <ul>
+                                <li><div data-value="en" onclick="selectOption('en', event)">English</div></li>
+                                <li><div data-value="hi" onclick="selectOption('hi', event)">हिन्दी</div></li>
+                                <li><div data-value="kn" onclick="selectOption('kn', event)">ಕನ್ನಡ</div></li>
+                            </ul>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><img
+                                        src="assets/images/links/rupee.png"
+                                        alt="Rupee"><a href="services.html">
+                                        Pricing</a></li>
+                                <li><img
+                                        src="assets/images/links/work.png"
+                                        alt="work"><a href="index.html"> Our
+                                        Work</a></li>
+                                 <li><img src="assets/images/links/about.png" alt="about"><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <form action="assets/php/sendmail.php" method="POST">
+                            <h3>Quick Contact Form</h3>
+                            <input type="text" name="full_name" id="fullname"
+                                placeholder="Name" required />
+                            <input type="email" name="email" id="email_address"
+                                placeholder="Email" required />
+                            <textarea name="message" id="message" required
+                                placeholder="Message"
+                                rows="3"></textarea>
+                            <button type="submit"
+                                name="submitContact">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <div class="social-links">
+                        <a href="#"><img src="assets/images/sociallinks/fb.png"
+                            alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/sociallinks/intragram.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/sociallinks/linkedin.png"
+                                alt="linkedin"></a>
+                        <a href="#" class="imga"><img src="assets/images/sociallinks/github.png"
+                                alt="github"></a>
+                        <a href="#" class="imga"><img src="assets/images/sociallinks/x.png"
+                                alt="twitter"></a>
+                    </div>
+                    <div class="email">Email Us : weblDev24@gmail.com</div>
+                    <div class="reserved-rights">
+                        © 2024 Web|Dev. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/headerscroll.js"></script>
+        <script src="assets/js/bgimage.js"></script>
+        <script src="assets/js/translations.js"></script>
+        <script src="assets/js/lang.js"></script>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web|Dev | Scale Your Business</title>
+        <link rel="shortcut icon" href="assets/images/Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/language.css">
+        <link rel="stylesheet" href="assets/css/services.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar" id="navbar">
+                <h1 href="#"><a href="#">Web|Dev</a></h1>
+                <ul>
+                    <li><a href="index.html" data-hover="Portfolio">Our Work</a></li>
+                    <li><a href="about.html" data-hover="We-Who?">About Us</a></li>
+                    <li><a href="#" data-hover="What We Do?">Services</a></li>
+                    <li><a href="contactus.html" data-hover="Say Hi!">Contact Us</a></li>
+                </ul>
+                <div class="lan1">
+                    <div class="select-container">
+                        <div class="svg-container" onclick="toggleDropdown()">
+                            <div class="options" id="options">
+                                <div data-value="en" onclick="selectOption('en', event)">English</div>
+                                <div data-value="hi" onclick="selectOption('hi', event)">हिन्दी</div>
+                                <div data-value="kn" onclick="selectOption('kn', event)">ಕನ್ನಡ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu"><img src="assets/images/menu.png"
+                    alt="menu"></div>
+            </div>
+        </header>
+        <section class="sec">
+            <div class="sec-title">
+                <h1>Our Services</h1>
+                <p>Comprehensive solutions for your digital presence.</p>
+            </div>
+            <div class="services">
+                <h2>What We Offer</h2>
+                <div class="services-box">
+                    <div class="service-card">
+                        <h3 id="webh3">Website Services</h3>
+                        <p id="webp">From design to deployment, we handle it all to give
+                            your business the best digital representation.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3  id="logoh3">Logo Design</h3>
+                        <p  id="logop">Creative logos that encapsulate your brand identity
+                            and make a lasting impression.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3 id="datah3">Data Management</h3>
+                        <p id="datap">Secure and efficient management of your data to keep
+                            your business running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing">
+            <h2>Pricing</h2>
+            <form id="pricingForm">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="website" name="mainService"
+                        value="website">
+                    <label for="website">Website Services</label>
+                </div>
+                <div id="websiteOptions" class="hidden">
+                    <!-- <h3>Website Services</h3> -->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="webDesign" name="service"
+                            value="150">
+                        <label for="webDesign">Website Design -
+                            ₹150</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="webDevelopment"
+                            name="service" value="450">
+                        <label for="webDevelopment">Website Development -
+                            ₹450</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="websiteDeployment"
+                            name="service" value="50">
+                        <label for="websiteDeployment">Website Deployment
+                            with Sub-domain - ₹50</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="domainRegistration"
+                            name="service" value="80">
+                        <label for="domainRegistration">Website Deployment with Domain Name - ₹80</label>
+                    </div>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="logo" name="mainService"
+                        value="logo">
+                    <label for="logo">Logo Design</label>
+                </div>
+                <div id="logoOptions" class="hidden" value="100">
+                    <p>Logo Design - ₹100</p>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="dataManagement"
+                        name="mainService" value="dataManagement">
+                    <label for="dataManagement">Data Management</label>
+                </div>
+                <div id="dataManagementOptions" class="hidden"
+                    value="120">
+                    <p>Data Management Services - ₹120</p>
+                </div>
+            </form>
+            <div class="total-price">
+                <p> <a class="total"> Total Price: ₹ </a><span id="totalPrice">0</span></p>
+            </div>
+        </section>
+        <section class="foot" id="contact">
+            <footer>
+                <div class="footer-start">
+                    <div class="company-name">
+                        <span class="loc-name">WeblDev Solutions , <br>
+                            Banagalore
+                            North , <br>
+                            Bangaluru , KA <br> India - 560057</span>
+                        <h4 class="loc"> Location</h4>
+                    </div>
+                    <div class="headings">
+                        <div class="languages">
+                            <ul>
+                                <li><div data-value="en" onclick="selectOption('en', event)">English</div></li>
+                                <li><div data-value="hi" onclick="selectOption('hi', event)">हिन्दी</div></li>
+                                <li><div data-value="kn" onclick="selectOption('kn', event)">ಕನ್ನಡ</div></li>
+                            </ul>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li><img
+                                        src="assets/images/links/rupee.png"
+                                        alt="Rupee"><a href="#">
+                                        Pricing</a></li>
+                                <li><img
+                                        src="assets/images/links/work.png"
+                                        alt="work"><a href="index.html"> Our
+                                        Work</a></li>
+                                 <li><img src="assets/images/links/about.png" alt="about."><a href="about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <form action="assets/php/sendmail.php" method="POST">
+                            <h3>Quick Contact Form</h3>
+                            <input type="text" name="full_name" id="fullname"
+                                placeholder="Name" required />
+                            <input type="email" name="email" id="email_address"
+                                placeholder="Email" required />
+                            <textarea name="message" id="message" required
+                                placeholder="Message"
+                                rows="3"></textarea>
+                            <button type="submit"
+                                name="submitContact">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <div class="social-links">
+                        <a href="#"><img src="assets/images/sociallinks/fb.png"
+                            alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/sociallinks/intragram.png"
+                                alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/sociallinks/linkedin.png"
+                                alt="linkedin"></a>
+                        <a href="#" class="imga"><img src="assets/images/sociallinks/github.png"
+                                alt="github"></a>
+                        <a href="#" class="imga"><img src="assets/images/sociallinks/x.png"
+                                alt="twitter"></a>
+                    </div>
+                    <div class="email">Email Us : weblDev24@gmail.com</div>
+                    <div class="reserved-rights">
+                        © 2024 Web|Dev. All Rights Reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/sever.js"></script>
+        <script src="assets/js/headerscroll.js"></script>
+        <script src="assets/js/bgimage.js"></script>
+        <script src="assets/js/translations.js"></script>
+        <script src="assets/js/lang.js"></script>
+    </body>
+</html>
